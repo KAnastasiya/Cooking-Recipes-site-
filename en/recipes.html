@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Coocking Recipes</title>	
+		<link rel="icon" type="image/png" href="../images/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
+		<link href="../scripts/custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
+		<link href="../styles/common.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="page-wrapper">
+			<header class="page-header">
+				<a href="home.html" class="logo clearfix">
+		 	        	<object type="image/svg+xml" data="../images/logo.svg">Site logo</object>
+					<p>Cooking <span>Recipes</span></p>
+				</a>
+				<nav class="clearfix"><ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="news.html">News</a></li> 
+					<li id="active-nav-item"><a href="recipes.html">Recipes</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li id="my-account" class="hidden"><img src="/avatar" alt="My ava">
+						<ul class="dropdown"> <li id="exit"><a href="#">Exit</a></li> </ul>
+					</li>
+				</ul></nav>
+				<div class="nav-dropdown"><div class="nav-icon"><a href="#"></a></div></div>
+			</header>
+			<main id="top">
+				<div class="floating-toolbar"><ul>
+		    			<li id="show-log-in"><a href="#">Log in</a></li>
+		    			<li id="show-sign-up"><a href="sign-up.html">Sign up</a></li>
+			    	</ul></div>
+				<form id="log-in-form" action="#" method="post">
+					<div>
+						<input type="text" name="login" id="login" placeholder="Login (nick name)" value="text_user" autofocus autocomplete="off">
+						<p class="error_msg">&nbsp;</p>
+					</div>
+					<div>	
+						<input type="password" name="pass" id="pass" placeholder="Пароль" value="123456789">
+						<input type="text" name="nacked_pass" id="nacked_pass" class="hidden" placeholder="Пароль">
+						<p class="error_msg">&nbsp;</p>
+					</div>
+					<div class="button-container clearfix">	
+						<button type="submit" id="log-in">Log in</button>	
+						<div class="show-pass checkbox-container clearfix">
+							<input type="checkbox" id="show-pass">
+							<label for="show-pass">Show password</label>
+						</div>
+					</div>
+				</form>
+				<section class="outerContainer best-recipe">
+					<h1>Best recipes</h1>
+					<div class="content">
+						<div class="card">	
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page3-img7.jpg" alt="image3">	
+									<figcaption>
+										<a href="http://demopage.cms-guide.com/" target="_blank"> <p>Vestibulum iaculis lacinia est oin dictum</p> </a>
+									</figcaption>
+							</figure>
+							<div class="best-recipe-details">
+								<header><h3>Vestibulum iaculis lacinia est oin dictum</h3></header>
+								<div class="recipe-details-content">
+									<div class="ingredients">
+										<div class="row"><div>6 4-to-6 oz</div><div>fresh lobster tails (make sure they are fully thawed if previously frozen)</div></div>
+										<div class="row"><div>1/4 cup</div><div>fresh lemon juice</div></div>
+										<div class="row"><div>1/4 cup</div><div>olive oil</div></div>
+										<div class="row"><div>1 tablespoon</div><div>fresh dill</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>sea salt</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+									</div>
+								</div>
+								<div class="recipe-prep-time">
+									<div>
+										<p>Preparation: 13 min</p>
+										<p>Grill: 7 min</p>
+									</div>
+									<div>
+										<p>Serving: 3-6</p>
+									</div>
+								</div>
+								<div class="button-container clearfix">	
+									<div class="resipe-rating">12 908</div>
+									<div class="preparation"><a href="http://www.lobsters-online.com/lobsterfly/category/cooking-lobster-recipe/page/2/">Preparation</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page3-img2.jpg" alt="image4">
+									<figcaption>
+										<a href="http://demopage.cms-guide.com/" target="_blank"> <p>Vestibulum iaculis lacinia est oin dictum.</p> </a>
+									</figcaption>
+							</figure>
+							<div class="best-recipe-details">
+								<header><h3>Vestibulum iaculis lacinia est oin dictum</h3></header>
+								<div class="recipe-details-content">
+									<div class="ingredients">
+										<div class="row"><div>6 4-to-6 oz</div><div>fresh lobster tails</div></div>
+										<div class="row"><div>1/4 cup</div><div>olive oil</div></div>
+										<div class="row"><div>1 tablespoon</div><div>fresh dill</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+									</div>
+								</div>
+								<div class="recipe-prep-time clearfix">
+									<div>
+										<p>Preparation: 43 min</p>
+										<p>Grill: 37 min</p>
+									</div>
+									<div>
+										<p>Serving: 3</p>
+									</div>
+								</div>
+								<div class="button-container clearfix">	
+									<div class="resipe-rating">12</div>
+									<div class="preparation"><a href="http://www.lobsters-online.com/lobsterfly/category/cooking-lobster-recipe/page/2/">Preparation</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page3-img1.jpg" alt="image1">	
+									<figcaption>
+										<a href="http://demopage.cms-guide.com/" target="_blank"> <p>Vestibulum iaculis lacinia est oin dictum.</p> </a>
+									</figcaption>
+							</figure>
+							<div class="best-recipe-details">
+								<header><h3>Vestibulum iaculis lacinia est oin dictum</h3></header>
+								<div class="recipe-details-content">
+									<div class="ingredients">
+										<div class="row"><div>6 4-to-6 oz</div><div>fresh lobster tails (make sure they are fully thawed if previously frozen)</div></div>
+										<div class="row"><div>1/4 cup</div><div>fresh lemon juice</div></div>
+										<div class="row"><div>1/4 cup</div><div>olive oil</div></div>
+										<div class="row"><div>1 tablespoon</div><div>fresh dill</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>sea salt</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+									</div>
+								</div>
+								<div class="recipe-prep-time clearfix">
+									<div>
+										<p>Preparation: 43 min</p>
+										<p>Grill: 37 min</p>
+									</div>
+									<div>
+										<p>Serving: 3</p>
+									</div>
+								</div>
+								<div class="button-container clearfix">	
+									<div class="resipe-rating">0</div>
+									<div class="preparation"><a href="http://www.lobsters-online.com/lobsterfly/category/cooking-lobster-recipe/page/2/">Preparation</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page3-img8.jpg" alt="image6">
+									<figcaption>
+										<a href="http://demopage.cms-guide.com/" target="_blank"> <p>Vestibulum iaculis lacinia est oin dictum.</p> </a>
+									</figcaption>
+							</figure>
+							<div class="best-recipe-details">
+								<header><h3>Vestibulum iaculis lacinia est oin dictum</h3></header>
+								<div class="recipe-details-content">
+									<div class="ingredients">
+										<div class="row"><div>6 4-to-6 oz</div><div>fresh lobster tails</div></div>
+										<div class="row"><div>1/4 cup</div><div>olive oil</div></div>
+										<div class="row"><div>1 tablespoon</div><div>fresh dill</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+									</div>
+								</div>
+								<div class="recipe-prep-time clearfix">
+									<div>
+										<p>Preparation: 43 min</p>
+										<p>Grill: 37 min</p>
+									</div>
+									<div>
+										<p>Serving: 3</p>
+									</div>
+								</div>
+								<div class="button-container clearfix">	
+									<div class="resipe-rating">897</div>
+									<div class="preparation"><a href="http://www.lobsters-online.com/lobsterfly/category/cooking-lobster-recipe/page/2/">Preparation</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page3-img6.jpg" alt="image8">
+									<figcaption>
+										<a href="http://demopage.cms-guide.com/" target="_blank"> <p>Vestibulum iaculis lacinia est oin dictum.</p> </a>
+									</figcaption>
+							</figure>
+							<div class="best-recipe-details">
+								<header><h3>Vestibulum iaculis lacinia est oin dictum</h3></header>
+								<div class="recipe-details-content">
+									<div class="ingredients">
+										<div class="row"><div>6 4-to-6 oz</div><div>fresh lobster tails</div></div>
+										<div class="row"><div>1/4 cup</div><div>olive oil</div></div>
+										<div class="row"><div>1 tablespoon</div><div>fresh dill</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+									</div>
+								</div>
+								<div class="recipe-prep-time clearfix">
+									<div>
+										<p>Preparation: 43 min</p>
+										<p>Grill: 37 min</p>
+									</div>
+									<div>
+										<p>Serving: 3</p>
+									</div>
+								</div>
+								<div class="button-container clearfix">	
+									<div class="resipe-rating">2 543</div>
+									<div class="preparation"><a href="http://www.lobsters-online.com/lobsterfly/category/cooking-lobster-recipe/page/2/">Preparation</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page3-img5.jpg" alt="image5">
+									<figcaption>
+										<a href="http://demopage.cms-guide.com/" target="_blank"> <p>Vestibulum iaculis lacinia est oin dictum.</p> </a>
+									</figcaption>
+							</figure>
+							<div class="best-recipe-details">
+								<header><h3>Vestibulum iaculis lacinia est oin dictum</h3></header>
+								<div class="recipe-details-content">
+									<div class="ingredients">
+										<div class="row"><div>6 4-to-6 oz</div><div>fresh lobster tails</div></div>
+										<div class="row"><div>1/4 cup</div><div>olive oil</div></div>
+										<div class="row"><div>1 tablespoon</div><div>fresh dill</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+									</div>
+								</div>
+								<div class="recipe-prep-time clearfix">
+									<div>
+										<p>Preparation: 43 min</p>
+										<p>Grill: 37 min</p>
+									</div>
+									<div>
+										<p>Serving: 3</p>
+									</div>
+								</div>
+								<div class="button-container clearfix">	
+									<div class="resipe-rating">0</div>
+									<div class="preparation"><a href="http://www.lobsters-online.com/lobsterfly/category/cooking-lobster-recipe/page/2/">Preparation</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page3-img3.jpg" alt="image7">
+									<figcaption>
+										<a href="http://demopage.cms-guide.com/" target="_blank"> <p>Vestibulum iaculis lacinia est oin dictum.</p> </a>
+									</figcaption>
+							</figure>
+							<div class="best-recipe-details">
+								<header><h3>Vestibulum iaculis lacinia est oin dictum</h3></header>
+								<div class="recipe-details-content">
+									<div class="ingredients">
+										<div class="row"><div>6 4-to-6 oz</div><div>fresh lobster tails</div></div>
+										<div class="row"><div>1/4 cup</div><div>olive oil</div></div>
+										<div class="row"><div>1 tablespoon</div><div>fresh dill</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+									</div>
+								</div>
+								<div class="recipe-prep-time clearfix">
+									<div>
+										<p>Preparation: 43 min</p>
+										<p>Grill: 37 min</p>
+									</div>
+									<div>
+										<p>Serving: 3</p>
+									</div>
+								</div>
+								<div class="button-container clearfix">	
+									<div class="resipe-rating">12 908</div>
+									<div class="preparation"><a href="http://www.lobsters-online.com/lobsterfly/category/cooking-lobster-recipe/page/2/">Preparation</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page3-img4.jpg" alt="image2">
+									<figcaption>
+										<a href="http://demopage.cms-guide.com/" target="_blank"> <p>Vestibulum iaculis lacinia est oin dictum.</p> </a>
+									</figcaption>
+							</figure>
+							<div class="best-recipe-details">
+								<header><h3>Vestibulum iaculis lacinia est oin dictum</h3></header>
+								<div class="recipe-details-content">
+									<div class="ingredients">
+										<div class="row"><div>6 4-to-6 oz</div><div>fresh lobster tails</div></div>
+										<div class="row"><div>1/4 cup</div><div>olive oil</div></div>
+										<div class="row"><div>1 tablespoon</div><div>fresh dill</div></div>
+										<div class="row"><div>1/4 teaspoon</div><div>ground black pepper</div></div>
+									</div>
+								</div>
+								<div class="recipe-prep-time clearfix">
+									<div>
+										<p>Preparation: 43 min</p>
+										<p>Grill: 37 min</p>
+									</div>
+									<div>
+										<p>Serving: 3</p>
+									</div>
+								</div>
+								<div class="button-container clearfix">	
+									<div class="resipe-rating">12 908</div>
+									<div class="preparation"><a href="http://www.lobsters-online.com/lobsterfly/category/cooking-lobster-recipe/page/2/">Preparation</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<a class="scroll-up"></a>
+			</main>
+			<footer class="page-footer">
+				<p>Cooking Recipes ©2016</p>
+				<ul class="language">
+					<li id="current-lang"><a href="../en/recipes.html">English</a></li>
+					<li><a href="../ua/recipes.html">Ukrainian</a></li>
+				</ul>
+			</footer>
+		</div>
+
+		<script src="../scripts/jQuery/jquery-1.12.1.min.js"></script>
+		<script src="../scripts/validation-1.11.0/jquery.validate.js"></script>
+		<script src="../scripts/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="../scripts/common.js"></script>
+		<script src="../scripts/form-validate.js"></script>
+	</body>
+</html>

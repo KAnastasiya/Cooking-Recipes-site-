@@ -1,0 +1,75 @@
+.slider {
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+    top: 106px;
+    display: flex;
+    flex-flow: column nowrap;
+    .slide {
+        display: none;
+        flex: 1 1;
+        img {
+            position: relative;
+            left: -260px;
+        }
+        p {
+            .font(3.6;3;@font-color);
+            text-align: center;
+            position: absolute;
+            top: 220px;
+            right: 96px;
+            span { color: @primary-color; }
+            @media screen and (min-width: 601px) and (max-width: 1023px) {
+                display: none;
+            }
+        }
+    }
+    .slideNav {
+        position: absolute;
+        top: 50%;    
+        &.next {
+            right: 36px; 
+            &::before { .arrow(24px; 5px; lighten(@icon-color, 20); 4px; 45deg;); }
+            &:hover {
+                &:lang(en)::after { .tip('Next'; 45px; -70px);  }   
+                &:lang(uk)::after { .tip('Наступний'; 45px; -80px);  }   
+            }
+        }
+        &.prev {
+            left: 36px; 
+            &::before { .arrow(24px; 5px; lighten(@icon-color, 20); 4px; -135deg; 0; -36px); }
+            &:hover {
+                &:lang(en)::after { .tip('Prev'; 45px; -50%); }
+                &:lang(uk)::after { .tip('Попередній'; 45px; -50%);  } 
+            }
+        }
+        &.next, &.prev {
+            &:hover::before { border-color: @primary-color; }
+            &:active::before { border-color: lighten(@primary-color, 20%); }
+        }
+    }
+    .dots-list {
+        position: absolute;
+        bottom: 8px;
+        right: 90px;
+        li {
+            display: inline;
+            margin: 0 5px;
+            cursor: pointer;
+            .dot {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: lighten(@icon-color, 20);
+                display: inline-block;
+                &:hover { background-color: @icon-color; }
+                &.dotActive { background-color: @primary-color; }
+            }
+            span { display: none; } 
+        }
+    }
+    @media screen and (max-width: 600px), 
+           screen and (min-device-width: 320px) and (max-device-width: 480px) {
+                display: none;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Coocking Recipes</title>	
+		<link rel="icon" type="image/png" href="../images/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
+		<link href="../scripts/custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
+		<link href="../styles/common.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="page-wrapper">
+		  	<header class="page-header">
+				<a href="home.html" class="logo clearfix">
+		 	        	<object type="image/svg+xml" data="../images/logo.svg">Site logo</object>
+		 	        	<p>Cooking <span>Recipes</span></p>
+				</a>
+				<nav class="clearfix"><ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="news.html">News</a></li> 
+					<li><a href="recipes.html">Recipes</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li id="active-nav-item"><a href="contacts.html">Contacts</a></li>
+					<li id="my-account" class="hidden"><img src="/avatar" alt="My ava">
+						<ul class="dropdown"> <li id="exit"><a href="#">Exit</a></li> </ul>
+					</li>
+				</ul></nav>
+				<div class="nav-dropdown"><div class="nav-icon"><a href="#"></a></div></div>
+		  	</header>
+			<main id="top">
+				<div class="floating-toolbar"><ul>
+		    			<li id="show-log-in"><a href="#">Log in</a></li>
+		    			<li id="show-sign-up"><a href="sign-up.html">Sign up</a></li>
+				    </ul></div>
+				<form id="log-in-form" action="#" method="post">
+					<div>
+						<input type="text" name="login" id="login" placeholder="Login (nick name)" value="text_user" autofocus autocomplete="off">
+						<p class="error_msg">&nbsp;</p>
+					</div>
+					<div>	
+						<input type="password" name="pass" id="pass" placeholder="Пароль" value="123456789">
+						<input type="text" name="nacked_pass" id="nacked_pass" class="hidden" placeholder="Пароль">
+						<p class="error_msg">&nbsp;</p>
+					</div>
+					<div class="button-container clearfix">	
+						<button type="submit" id="log-in">Log in</button>	
+						<div class="show-pass checkbox-container clearfix">
+							<input type="checkbox" id="show-pass">
+							<label for="show-pass">Show password</label>
+						</div>
+					</div>
+				</form>
+				<div class="outerContainer contacts-container">
+					<section class="contact-map">
+						<h1>Contact us</h1>
+						<div class="map"></div>
+					</section>
+					<section class="mail-us">
+						<h1>Contact Form</h1>	
+						<form id="contact-form" action="#" method="post">
+							<div class="inline-fields">
+								<div>
+									<input type="text" name="user_name" placeholder="Name">
+									<p class="error_msg">&nbsp;</p>
+								</div>
+								<div>
+									<input type="email" name="email" placeholder="Email">
+									<p class="error_msg">&nbsp;</p>
+								</div>
+								<div>
+									<input type="tel" name="phone" placeholder="Phone">
+									<p class="error_msg">&nbsp;</p>
+								</div>
+							</div>
+							<div>
+								<textarea name="message" placeholder="Message" spellcheck></textarea>
+								<p class="error_msg">&nbsp;</p>
+							</div>
+							<div class="button-container">
+								<button type="submit" id="message-confirm">Send message</button>
+	   					</div>
+						</form>
+					</section>
+				</div>
+				<div class="toast" id="mail-OK">	<p>We received your message</p> </div>
+				<a class="scroll-up"></a>
+			</main>
+			<footer class="page-footer">
+				<p>Cooking Recipes ©2016</p>
+				<ul class="language">
+					<li id="current-lang"><a href="../en/contacts.html">English</a></li>
+					<li><a href="../ua/contacts.html">Ukrainian</a></li>
+				</ul>
+			</footer>
+		</div>
+
+		<script src="../scripts/jQuery/jquery-1.12.1.min.js"></script>
+		<script src="../scripts/validation-1.11.0/jquery.validate.js"></script>
+		<script src="../scripts/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+		<script src="../scripts/gmap3/gmap3.min.js"></script>
+		<script src="../scripts/map.js"></script>
+		<script src="../scripts/common.js"></script>
+		<script src="../scripts/form-validate.js"></script>
+	</body>
+</html>
