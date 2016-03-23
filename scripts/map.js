@@ -4,7 +4,7 @@ $(document).ready(function() {
         rect_border = 'rgba(104,179,11,.3)',    
         lang = $('html').attr('lang'),          
         overlayContent = (function(lang) {      
-            if (lang == 'ua') {
+            if (lang == 'uk') {
                 return ('<div class="marker-details">' + '<h3>ТРЦ "Караван"</h3>' +
                 '<p>Нижньодніпровська вулиця 17, Ювілейне, Дніпропетровська область</p>' +
                 '<p>Сайт: <a href="http://dnipropetrovsk-nizhnedneprovskaya.icaravan.com.ua/" target="_blank">icaravan.com.ua</a></p>' +
@@ -16,7 +16,11 @@ $(document).ready(function() {
                 '<p>Сайт: <a href="http://dnipropetrovsk-nizhnedneprovskaya.icaravan.com.ua/" target="_blank">icaravan.com.ua</a></p>' +
                 '<p>Open: 10:00 - 22:00</p>' + '</div>')
             }
-        })(lang);
+        })(lang),
+        map_marker_icon = (function(lang) {
+            if (lang == 'uk') { return ('images/map-marker.svg') }
+            else { return ('../images/map-marker.svg') }
+         })(lang);
     //--------------------------------------------------------------------------------------
     $('.map').gmap3({
         map: {
@@ -40,8 +44,8 @@ $(document).ready(function() {
         },
         marker: {
             latLng: pos,                                                       
-            options: {                                                          
-                icon: new google.maps.MarkerImage("../images/map-marker.svg")  
+            options: {                    
+                icon: new google.maps.MarkerImage(map_marker_icon)  
             },
             events: {
                 mouseover: function(marker, event, context){

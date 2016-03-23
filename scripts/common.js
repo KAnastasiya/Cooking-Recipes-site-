@@ -62,7 +62,7 @@ $(document).ready(function() {
         $('#my-account').addClass('hidden');
         $('.floating-toolbar').show();
         $('#show-log-in').removeClass('clicked');
-        $(location).attr('href','home.html');
+        $(location).attr('href','index.html');
         return false; 
     });
     //--------------------------------------------------------------------------------------
