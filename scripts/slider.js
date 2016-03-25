@@ -55,8 +55,7 @@ $(document).ready(function() {
   $('.dot').click(function() {
     var isActive = $(this).is('.dotActive');
     if (!isActive) {
-      var index = parseFloat( $(this).siblings().text() );
-      slideFunc(index);
+      slideFunc(parseFloat( $(this).siblings().text() ));
     }
   });
 

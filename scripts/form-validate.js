@@ -271,14 +271,13 @@ $(document).ready(function() {
   });
   //--------------------------------------------------------------------------------------
   $('#show-pass').click(function() {
-    var isChecked = $(this).is(':checked');
-    if (isChecked) {
-      var nackedPass = $('#pass').val();
-      $('#nacked_pass').val(nackedPass).removeClass('hidden');
+    if ($(this).is(':checked')) {
+      $('#nacked_pass').val($('#pass').val())
+                       .removeClass('hidden');
       $('#pass').addClass('hidden');
     } else {
-      var pass = $('#nacked_pass').val();
-      $('#pass').val(pass).removeClass('hidden');
+      $('#pass').val($('#nacked_pass').val())
+                .removeClass('hidden');
       $('#nacked_pass').addClass('hidden');
     }
   });

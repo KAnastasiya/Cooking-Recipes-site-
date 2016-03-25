@@ -16,6 +16,7 @@ $(document).ready(function() {
     $('.select').toggleClass('open');
     $(this).remove();
     $(str).appendTo('.select .mCSB_container');
+
     (function sort() {
       var mylist = $('.select .mCSB_container'),
         listitems = mylist.children('li');
