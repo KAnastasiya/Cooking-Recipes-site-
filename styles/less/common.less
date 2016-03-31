@@ -33,11 +33,11 @@
 }
 /*------------------------------------------------------------------*/
 .placeholder {
-    &::-webkit-input-placeholder { font-style: italic; }
-    &::-moz-placeholder { font-style: italic; }
-    &:-moz-placeholder { font-style: italic; }
-    &:-ms-input-placeholder { font-style: italic; }
-    &::-ms-input-placeholder { font-style: italic; }
+  &::-webkit-input-placeholder { font-style: italic; }
+  &::-moz-placeholder { font-style: italic; }
+  &:-moz-placeholder { font-style: italic; }
+  &:-ms-input-placeholder { font-style: italic; }
+  &::-ms-input-placeholder { font-style: italic; }
 }
 /*------------------------------------------------------------------*/
 .font(@font-koef: 1; @height-koef: 1; @color: @font-color;) {
@@ -78,32 +78,32 @@
 }
 /*------------------------------------------------------------------*/
 .underline(@top: 100%; @left: 0; @translateY: translateY(6px); @color: @primary-color) {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: @color;
-    position: absolute;
-    top: @top;
-    left: @left;
-    opacity: 0;
-    transform: @translateY;
-    transition: opacity 0.3s, transform 0.3s;   
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: @color;
+  position: absolute;
+  top: @top;
+  left: @left;
+  opacity: 0;
+  transform: @translateY;
+  transition: opacity 0.3s, transform 0.3s;   
 }
 
 .link-underline-up {
-    &::after { .underline; }
-    &:hover::after {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    &:active::after { background-color: lighten(@primary-color, 20%); }
+  &::after { .underline; }
+  &:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  &:active::after { background-color: lighten(@primary-color, 20%); }
 }
 
 .link-underline-down {
-    &::before { .underline(0;0;translateY(-6px)); }
-    &:hover::before {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    &:active::before { background-color: lighten(@primary-color, 20%); }
+  &::before { .underline(0;0;translateY(-6px)); }
+  &:hover::before {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  &:active::before { background-color: lighten(@primary-color, 20%); }
 }
