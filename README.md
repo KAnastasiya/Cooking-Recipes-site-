@@ -1,1 +1,1 @@
-Site is published at http://kanastasiya.github.io/CookingRecipes
+Site published at http://kanastasiya.github.io/CookingRecipes
