@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Coocking Recipes</title>	
+		<title>Coocking Recipes</title>
 		<link rel="icon" type="image/png" href="../images/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
 		<link href="../scripts/custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
@@ -18,10 +18,10 @@
 				<a href="index.html" class="logo clearfix">
 					<object type="image/svg+xml" data="../images/logo.svg">Site logo</object>
 					<p>Cooking <span>Recipes</span></p>
-				</a>
+				</a><!--logo-->
 				<nav class="clearfix"><ul>
 					<li><a href="index.html">Home</a></li>
-					<li id="active-nav-item"><a href="news.html">News</a></li> 
+					<li id="active-nav-item"><a href="news.html">News</a></li>
 					<li><a href="recipes.html">Recipes</a></li>
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="contacts.html">Contacts</a></li>
@@ -35,80 +35,88 @@
 				<div class="floating-toolbar"><ul>
 					<li id="show-log-in"><a href="#">Log in</a></li>
 					<li id="show-sign-up"><a href="sign-up.html">Sign up</a></li>
-				</ul></div>
+				</ul></div><!--floating-toolbar-->
 				<form id="log-in-form" action="#" method="post">
 					<div>
 						<input type="text" name="login" id="login" placeholder="Login (nick name)" value="text_user" autofocus autocomplete="off">
 						<p class="error_msg">&nbsp;</p>
 					</div>
-					<div>	
+					<div>
 						<input type="password" name="pass" id="pass" placeholder="Пароль" value="123456789">
 						<input type="text" name="nacked_pass" id="nacked_pass" class="hidden" placeholder="Пароль">
 						<p class="error_msg">&nbsp;</p>
 					</div>
-					<div class="button-container clearfix">	
-						<button type="submit" id="log-in">Log in</button>	
+					<div class="button-container clearfix">
+						<button type="submit" id="log-in">Log in</button>
 						<div class="show-pass checkbox-container clearfix">
 							<input type="checkbox" id="show-pass">
 							<label for="show-pass">Show password</label>
-						</div>
-					</div>
-				</form>
+						</div><!--show-pass-->
+					</div><!--button-container-->
+				</form><!--log-in-form-->
 				<div class="outerContainer news-container">
 					<section class="hot-news">
-						<h1>Hot news</h1>		
+						<h1>Hot news</h1>
 						<figure class="clearfix">
-							<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbd6uS0MsVpXWV01iMf2gIAywey_RzCpoirt0z6TyoX0RPmvMTtg" alt="image1">	
+							<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbd6uS0MsVpXWV01iMf2gIAywey_RzCpoirt0z6TyoX0RPmvMTtg" alt="image1">
 							<figcaption>
 							<header>
 									<h3>Lorem ipsum dolor sit amet</h3>
 									<p class="news-date">June 25th, 2013</p>
 								</header>
 								<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. Velit esse cillum dolore eu fugiat. Sit amet conse ctetur adipis.</p>
-								<div class="more-icon"><a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a></div>
+								<div class="more-icon">
+									<a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a>
+								</div>
 							</figcaption>
 						</figure>
 						<figure class="clearfix">
-							<img src="https://lyonl.com/images/2522441809097536.jpg?maxwidth=770" alt="image2">	
+							<img src="https://lyonl.com/images/2522441809097536.jpg?maxwidth=770" alt="image2">
 							<figcaption>
 								<header>
 									<h3>Lorem ipsum dolor sit amet</h3>
 									<p class="news-date">June 25th, 2013</p>
 								</header>
 								<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<div class="more-icon"><a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a></div>
+								<div class="more-icon">
+									<a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a>
+								</div>
 							</figcaption>
 						</figure>
 						<figure class="clearfix">
-							<img src="http://holidayclub.by/images/countries/finljandija/losos.jpg" alt="image3">	
+							<img src="http://holidayclub.by/images/countries/finljandija/losos.jpg" alt="image3">
 							<figcaption>
 								<header>
 									<h3>Lorem ipsum dolor sit amet</h3>
 									<p class="news-date">June 25th, 2013</p>
 								</header>
 								<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-								<div class="more-icon"><a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a></div>
+								<div class="more-icon">
+									<a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a>
+								</div>
 							</figcaption>
 						</figure>
 						<figure class="clearfix">
-							<img src="http://trendymen.ru/images/old/lifestyle/menu/images_6/Club%20Sandwich1.jpg" alt="image4">	
+							<img src="http://trendymen.ru/images/old/lifestyle/menu/images_6/Club%20Sandwich1.jpg" alt="image4">
 							<figcaption>
 								<header>
 									<h3>Lorem ipsum dolor sit amet</h3>
 									<p class="news-date">June 25th, 2013</p>
 								</header>
 								<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate. Velit esse cillum dolore eu fugiat. Sit amet conse ctetur adipis.</p>
-								<div class="more-icon"><a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a></div>
+								<div class="more-icon">
+									<a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a>
+								</div>
 							</figcaption>
 						</figure>
-					</section>
+					</section><!--hot-news-->
 					<section class="week-news">
-						<h1>News of the week</h1>	
+						<h1>News of the week</h1>
 						<figure class="clearfix">
 							<div class="calendar">
 								<img src="http://templates.cms-guide.com/47370/images/badge.png" alt="image10">
 								<p>20<span>June</span></p>
-							</div>
+							</div><!--calendar-->
 							<figcaption>
 								<a href="http://templates.cms-guide.com/47370/read-more-1">
 									<h3>Vestibulum iaculis lacinia est roin dictum elementum velit.</h3>
@@ -120,7 +128,7 @@
 							<div class="calendar">
 								<img src="http://templates.cms-guide.com/47370/images/badge.png" alt="image10">
 								<p>20<span>June</span></p>
-							</div>
+							</div><!--calendar-->
 							<figcaption>
 								<a href="http://templates.cms-guide.com/47370/read-more-1">
 									<h3>Culis lacinia est roin por lore ater dictum elementum velit.</h3>
@@ -132,7 +140,7 @@
 							<div class="calendar">
 								<img src="http://templates.cms-guide.com/47370/images/badge.png" alt="image10">
 								<p>20<span>June</span></p>
-							</div>
+							</div><!--calendar-->
 							<figcaption>
 								<a href="http://templates.cms-guide.com/47370/read-more-1">
 									<h3>Vestibulum iaculis lacinia est roin dictum elementum velit.</h3>
@@ -144,16 +152,16 @@
 							<div class="calendar">
 								<img src="http://templates.cms-guide.com/47370/images/badge.png" alt="image10">
 								<p>20<span>June</span></p>
-							</div>
+							</div><!--calendar-->
 							<figcaption>
-								<a href="http://templates.cms-guide.com/47370/read-more-1">	
+								<a href="http://templates.cms-guide.com/47370/read-more-1">
 									<h3>Culis lacinia est roin por lore ater dictum elementum velit.</h3>
 								</a>
 								<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&#8230;</p>
 							</figcaption>
 						</figure>
-					</section>
-				</div>
+					</section><!--week-news-->
+				</div><!--news-container-->
 				<a class="scroll-up"></a>
 			</main>
 			<footer class="page-footer">
@@ -161,9 +169,9 @@
 				<ul class="language">
 					<li id="current-lang"><a href="../en/news.html">English</a></li>
 					<li><a href="../news.html">Ukrainian</a></li>
-				</ul>
+				</ul><!--language-->
 			</footer>
-		</div>
+		</div><!--page-wrapper-->
 
 		<script src="../scripts/common.js" defer></script>
 		<script src="../scripts/form-validate.js" defer></script>

@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Coocking Recipes</title>	
+		<title>Coocking Recipes</title>
 		<link rel="icon" type="image/png" href="../images/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
 		<link href="../scripts/custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
@@ -11,17 +11,17 @@
 		<script src="../scripts/validation-1.11.0/jquery.validate.js" defer></script>
 		<script src="../scripts/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js" defer></script>
 	</head>
-	
+
 	<body>
 		<div class="page-wrapper">
 			<header class="page-header">
 				<a href="index.html" class="logo clearfix">
-	 	      <object type="image/svg+xml" data="../images/logo.svg">Site logo</object>
+					<object type="image/svg+xml" data="../images/logo.svg">Site logo</object>
 					<p>Cooking <span>Recipes</span></p>
-				</a>
+				</a><!--logo-->
 				<nav class="clearfix"><ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="news.html">News</a></li> 
+					<li><a href="news.html">News</a></li>
 					<li><a href="recipes.html">Recipes</a></li>
 					<li id="active-nav-item"><a href="blog.html">Blog</a></li>
 					<li><a href="contacts.html">Contacts</a></li>
@@ -30,30 +30,30 @@
 					</li>
 				</ul></nav>
 				<div class="nav-dropdown"><div class="nav-icon"><a href="#"></a></div></div>
- 	    </header>
+			</header>
 			<main id="top">
 				<div class="floating-toolbar"><ul>
-    			<li id="show-log-in"><a href="#">Log in</a></li>
-    			<li id="show-sign-up"><a href="sign-up.html">Sign up</a></li>
-    		</ul></div>
+					<li id="show-log-in"><a href="#">Log in</a></li>
+					<li id="show-sign-up"><a href="sign-up.html">Sign up</a></li>
+				</ul></div><!--floating-toolbar-->
 				<form id="log-in-form" action="#" method="post">
 					<div>
 						<input type="text" name="login" id="login" placeholder="Login (nick name)" value="text_user" autofocus autocomplete="off">
 						<p class="error_msg">&nbsp;</p>
 					</div>
-					<div>	
+					<div>
 						<input type="password" name="pass" id="pass" placeholder="Пароль" value="123456789">
 						<input type="text" name="nacked_pass" id="nacked_pass" class="hidden" placeholder="Пароль">
 						<p class="error_msg">&nbsp;</p>
 					</div>
-					<div class="button-container clearfix">	
-						<button type="submit" id="log-in">Log in</button>	
+					<div class="button-container clearfix">
+						<button type="submit" id="log-in">Log in</button>
 						<div class="show-pass checkbox-container clearfix">
 							<input type="checkbox" id="show-pass">
 							<label for="show-pass">Show password</label>
-						</div>
-					</div>
-				</form>
+						</div><!--show-pass-->
+					</div><!--button-container-->
+				</form><!--log-in-form-->
 				<div class="outerContainer blog-container">
 					<section class="blog">
 						<h1>Blog</h1>
@@ -63,10 +63,12 @@
 								<p>Monday, 13.04.2013, 11:50 am</p>
 							</header>
 							<figure>
-								<img src="http://templates.cms-guide.com/47370/images/page4-img1.jpg" alt="image1">	
+								<img src="http://templates.cms-guide.com/47370/images/page4-img1.jpg" alt="image1">
 								<figcaption>
 									<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. Velit esse cillum dolore eu fugiat. Sit amet conse ctetur adipis.</p>
-									<div class="more-icon"><a href="http://demopage.cms-guide.com/" target="_blank">Read more</a></div>
+									<div class="more-icon">
+										<a href="http://demopage.cms-guide.com/" target="_blank">Read more</a>
+									</div>
 								</figcaption>
 							</figure>
 						</article>
@@ -76,17 +78,19 @@
 								<p>Monday, 13.04.2013, 11:50 am</p>
 							</header>
 							<figure>
-								<img src="http://templates.cms-guide.com/47370/images/page4-img2.jpg" alt="image2">	
+								<img src="http://templates.cms-guide.com/47370/images/page4-img2.jpg" alt="image2">
 								<figcaption>
 									<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. Velit esse cillum dolore eu fugiat. Sit amet conse ctetur adipis.</p>
-									<div class="more-icon"><a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a></div>
+									<div class="more-icon">
+										<a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a>
+									</div>
 								</figcaption>
 							</figure>
 						</article>
-					</section>
-					<aside class="blog-categories">	
+					</section><!--blog-->
+					<aside class="blog-categories">
 						<article>
-							<h1>Categories</h1>	
+							<h1>Categories</h1>
 							<ul>
 								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Suspendisse sollicitudin velit sed leo</a></li>
 								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Ut pharetra augue nec augue</a></li>
@@ -99,8 +103,8 @@
 								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Lacinia fermentum doloerestur</a></li>
 							</ul>
 						</article>
-					</aside>
-				</div>
+					</aside><!--blog-categories-->
+				</div><!--blog-container-->
 				<a class="scroll-up"></a>
 			</main>
 			<footer class="page-footer">
@@ -108,9 +112,9 @@
 				<ul class="language">
 					<li id="current-lang"><a href="../en/blog.html">English</a></li>
 					<li><a href="../blog.html">Ukrainian</a></li>
-				</ul>
+				</ul><!--language-->
 			</footer>
-		</div>
+		</div><!--page-wrapper-->
 
 		<script src="../scripts/common.js" defer></script>
 		<script src="../scripts/slider.js" defer></script>

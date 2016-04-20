@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Coocking Recipes</title>	
+		<title>Coocking Recipes</title>
 		<link rel="icon" type="image/png" href="../images/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
 		<link href="../scripts/custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
@@ -22,12 +22,12 @@
 		<div class="page-wrapper sign-up-page">
 			<header class="page-header">
 				<a href="index.html" class="logo clearfix">
-	 	     <object type="image/svg+xml" data="../images/logo.svg">Site logo</object>
+					<object type="image/svg+xml" data="../images/logo.svg">Site logo</object>
 					<p>Cooking <span>Recipes</span></p>
-				</a>
+				</a><!--logo-->
 				<nav class="clearfix"><ul>
 					<li><a href="index.html">Home</a></li>
-					<li class="news-dropdown"><a href="news.html">News</a></li> 
+					<li class="news-dropdown"><a href="news.html">News</a></li>
 					<li><a href="recipes.html">Recipes</a></li>
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="contacts.html">Contacts</a></li>
@@ -37,9 +37,9 @@
 				</ul></nav>
 				<div class="nav-dropdown"><div class="nav-icon"><a href="#"></a></div></div>
 			</header>
-		  <main>
-		   	<div class="outerContainer">
-					<form id="sign-up-form" action="#" method="post" enctype="multipart/form-data"> 
+			<main>
+				<div class="outerContainer">
+					<form id="sign-up-form" action="#" method="post" enctype="multipart/form-data">
 						<h1>Sign up</h1>
 						<div class="content">
 							<div class="personal">
@@ -48,17 +48,17 @@
 									<p class="error_msg">&nbsp;</p>
 								</div>
 								<div class="inline-field">
-									<div class="age">								
+									<div class="age">
 										<input type="text" name="age" placeholder="Age" class="age">
 										<p class="error_msg">&nbsp;</p>
-									</div>
+									</div><!--age-->
 									<div class="gender clearfix">
 										<input type="radio" name="gender" id="male">
 										<label for="male">Male</label>
 										<input type="radio" name="gender" id="female" checked>
 										<label for="female">Female</label>
-									</div>
-								</div>
+									</div><!--gender-->
+								</div><!--inline-field-->
 								<div class="select">
 									<input type="text" value="Ukraine" class="select-value">
 									<ul>
@@ -70,13 +70,13 @@
 										<li>Japan</li>
 									</ul>
 									<p class="error_msg">&nbsp;</p>
-								</div>
+								</div><!--select-->
 								<div>
 									<input type="email" name="email" placeholder="Email">
 									<p class="error_msg">&nbsp;</p>
 								</div>
-								<div class="inline-field">	
-									<div>	
+								<div class="inline-field">
+									<div>
 										<input type="password" name="pass"  id="pass" placeholder="Password">
 										<input type="text" name="nacked_pass"  id="nacked_pass" class="hidden" placeholder="Password">
 										<p class="error_msg">&nbsp;</p>
@@ -84,38 +84,40 @@
 									<div class="show-pass checkbox-container clearfix">
 										<input type="checkbox" id="show-pass">
 										<label for="show-pass">Show password</label>
-									</div>
-								</div>
-							</div>
+									</div><!--show-pass-->
+								</div><!--inline-field-->
+							</div><!--personal-->
 							<div class="avatar">
 								<div id="files"><img src="../images/avatar.png" alt="Avatar"></div>
 								<div class="upload">
 									<button type="button">Upload avatar</button>
 									<input type="file" name="avatar" id="fileupload">
-								</div>
+								</div><!--upload-->
 								<p class="error_msg">&nbsp;</p>
-							</div>
-						</div>
+							</div><!--avatar-->
+						</div><!--content-->
 						<div class="about-me">
 							<textarea name="comment" placeholder="About me...." spellcheck></textarea>
 							<p class="error_msg">&nbsp;</p>
-						</div>
+						</div><!--about-me-->
 						<div class="button-container">
 							<button type="submit" name="submit" id="sign-up-confirm">Sign up</button>
 							<button type="reset" id="sign-up-cancel" data-url="index.html">Відмінити</button>
-						</div>
-					</form>
-				</div>
-				<div class="toast" id="sign-up-OK"> <p>Congratulate! You are registed</p> </div>
-			</main>
+						</div><!--button-container-->
+					</form><!--sign-up-form-->
+				</div><!--outerContainer-->
+				<div class="toast" id="sign-up-OK">
+					<p>Congratulate! You are registed</p>
+				</div><!--toast-->
+			</main
 			<footer class="page-footer">
 				<p>Cooking Recipes ©2016</p>
 				<ul class="language">
 					<li id="current-lang"><a href="../en/sign-up.html">English</a></li>
 					<li><a href="../sign-up.html">Ukrainian</a></li>
-				</ul>
+				</ul><!--language-->
 			</footer>
-		</div>
+		</div><!--page-wrapper-->
 
 		<script src="../scripts/common.js" defer></script>
 		<script src="../scripts/form-validate.js" defer></script>
