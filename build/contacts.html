@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<title>Coocking Recipes</title>
+		<link rel="icon" type="image/png" href="sources/images/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
+		<link href="sources/styles.css" rel="stylesheet">
+		<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=ua" defer></script>
+	</head>
+
+	<body>
+		<div class="page-wrapper">
+			<header class="page-header">
+				<a class="logo clearfix" href="index.html">
+					<object type="image/svg+xml" data="sources/images/logo.svg">Site logo</object>
+					<p>Cooking <span>Recipes</span></p>
+				</a><!--logo-->
+				<nav class="clearfix"><ul>
+					<li><a href="index.html">Домашня</a></li>
+					<li><a href="news.html">Новини</a></li>
+					<li><a href="recipes.html">Рецепти</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li id="active-nav-item"><a href="contacts.html">Контакти</a></li>
+					<li class="hidden" id="my-account"><img src="/avatar" alt="My ava">
+						<ul class="dropdown"> <li id="exit"><a href="#">Вийти</a></li> </ul>
+					</li>
+				</ul></nav>
+				<div class="nav-dropdown"><div class="nav-icon"><a href="#"></a></div></div>
+			</header>
+			<main id="top">
+				<div class="floating-toolbar"><ul>
+					<li id="show-log-in"><a href="#">Увійти</a></li>
+					<li id="show-sign-up"><a href="sign-up.html">Зареєструватися</a></li>
+				</ul></div><!--floating-toolbar-->
+				<form id="log-in-form" action="#" method="post">
+					<div>
+						<input id="login" type="text" name="login" placeholder="Логін" value="text_user" autofocus autocomplete="off">
+						<p class="error_msg">&nbsp;</p>
+					</div>
+					<div>
+						<input id="pass" type="password" name="pass" placeholder="Пароль" value="123456789">
+						<input class="hidden" id="nacked_pass" type="text" name="nacked_pass" placeholder="Пароль">
+						<p class="error_msg">&nbsp;</p>
+					</div>
+					<div class="button-container clearfix">
+						<button id="log-in" type="submit">Увійти</button>
+						<div class="show-pass checkbox-container clearfix">
+							<input id="show-pass" type="checkbox">
+							<label for="show-pass">Показати пароль</label>
+						</div><!--show-pass-->
+					</div><!--button-container-->
+				</form> <!--log-in-form-->
+				<div class="outerContainer contacts-container">
+					<section class="contact-map">
+						<h1>Наша адреса</h1>
+						<div class="map"></div>
+					</section><!--contact-map-->
+					<section class="mail-us">
+						<h1>Напишіть нам</h1>
+						<form id="contact-form" action="#" method="post">
+							<div class="inline-fields">
+								<div>
+									<input type="text" name="user_name" placeholder="Ім'я">
+									<p class="error_msg">&nbsp;</p>
+								</div>
+								<div>
+									<input type="email" name="email" placeholder="Email">
+									<p class="error_msg">&nbsp;</p>
+								</div>
+								<div>
+									<input type="tel" name="phone" placeholder="Мобільний телефон">
+									<p class="error_msg">&nbsp;</p>
+								</div>
+							</div><!--inline-fields-->
+							<div>
+								<textarea name="message" placeholder="Текст повідомлення" spellcheck></textarea>
+								<p class="error_msg">&nbsp;</p>
+							</div>
+							<div class="button-container">
+								<button id="message-confirm" type="submit">Надіслати листа</button>
+							</div><!--button-container-->
+						</form><!--contact-form-->
+					</section><!--mail-us-->
+				</div><!--contacts-container-->
+				<div class="toast" id="mail-OK">
+					<p>Ми отримали Ваш лист. Дякуємо</p>
+				</div><!--toast-->
+				<a class="scroll-up"></a>
+			</main>
+			<footer class="page-footer">
+				<p>Cooking Recipes ©2016</p>
+				<ul class="language">
+					<li><a href="en/contacts.html">Англійська</a></li>
+					<li id="current-lang"><a href="contacts.html">Українська</a></li>
+				</ul><!--language-->
+			</footer>
+		</div><!--page-wrapper-->
+
+		<script src="sources/common.js" defer></script>
+		<script src="sources/contacts.js" defer></script>
+	</body>
+</html>

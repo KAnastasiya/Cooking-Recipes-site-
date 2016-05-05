@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Coocking Recipes</title>
+		<link rel="icon" type="image/png" href="../sources/images/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
+		<link href="../sources/styles.css" rel="stylesheet">
+		<script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js" defer></script>
+	</head>
+
+	<body>
+		<div class="page-wrapper sign-up-page">
+			<header class="page-header">
+				<a class="logo clearfix" href="index.html">
+					<object type="image/svg+xml" data="../sources/images/logo.svg">Site logo</object>
+					<p>Cooking <span>Recipes</span></p>
+				</a><!--logo-->
+				<nav class="clearfix"><ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="news-dropdown"><a href="news.html">News</a></li>
+					<li><a href="recipes.html">Recipes</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li class="hidden" id="my-account"><img src="/avatar" alt="My ava">
+						<ul class="dropdown"> <li id="exit"><a href="#">Exit</a></li> </ul>
+					</li>
+				</ul></nav>
+				<div class="nav-dropdown"><div class="nav-icon"><a href="#"></a></div></div>
+			</header>
+			<main>
+				<div class="outerContainer">
+					<form id="sign-up-form" action="#" method="post" enctype="multipart/form-data">
+						<h1>Sign up</h1>
+						<div class="content">
+							<div class="personal">
+								<div>
+									<input type="text" name="login" placeholder="Login (nick)" autofocus>
+									<p class="error_msg">&nbsp;</p>
+								</div>
+								<div class="inline-field">
+									<div class="age">
+										<input class="age" type="text" name="age" placeholder="Age">
+										<p class="error_msg">&nbsp;</p>
+									</div><!--age-->
+									<div class="gender clearfix">
+										<input id="male" type="radio" name="gender">
+										<label for="male">Male</label>
+										<input id="female" type="radio" name="gender" checked>
+										<label for="female">Female</label>
+									</div><!--gender-->
+								</div><!--inline-field-->
+								<div class="select">
+									<input class="select-value" type="text" value="Ukraine" readonly>
+									<ul>
+										<li>Austria</li>
+										<li>Croatia</li>
+										<li>Italy</li>
+										<li>Iran</li>
+										<li>Sweden</li>
+										<li>Japan</li>
+									</ul>
+									<p class="error_msg">&nbsp;</p>
+								</div><!--select-->
+								<div>
+									<input type="email" name="email" placeholder="Email">
+									<p class="error_msg">&nbsp;</p>
+								</div>
+								<div class="inline-field">
+									<div>
+										<input id="pass" type="password" name="pass" placeholder="Password">
+										<input class="hidden" id="nacked_pass" type="text" name="nacked_pass" placeholder="Password">
+										<p class="error_msg">&nbsp;</p>
+									</div>
+									<div class="show-pass checkbox-container clearfix">
+										<input id="show-pass" type="checkbox">
+										<label for="show-pass">Show password</label>
+									</div><!--show-pass-->
+								</div><!--inline-field-->
+							</div><!--personal-->
+							<div class="avatar">
+								<div id="files"><img src="/avatar" alt="Avatar"></div>
+								<div class="upload">
+									<button type="button">Upload avatar</button>
+									<input id="fileupload" type="file" name="avatar">
+								</div><!--upload-->
+								<p class="error_msg">&nbsp;</p>
+							</div><!--avatar-->
+						</div><!--content-->
+						<div class="about-me">
+							<textarea name="comment" placeholder="About me...." spellcheck></textarea>
+							<p class="error_msg">&nbsp;</p>
+						</div><!--about-me-->
+						<div class="button-container">
+							<button id="sign-up-confirm" type="submit" name="submit">Sign up</button>
+							<button id="sign-up-cancel" type="reset" data-url="index.html">Відмінити</button>
+						</div><!--button-container-->
+					</form><!--sign-up-form-->
+				</div><!--outerContainer-->
+				<div class="toast" id="sign-up-OK">
+					<p>Congratulate! You are registed</p>
+				</div><!--toast-->
+			</main>
+			<footer class="page-footer">
+				<p>Cooking Recipes ©2016</p>
+				<ul class="language">
+					<li id="current-lang"><a href="../en/sign-up.html">English</a></li>
+					<li><a href="../sign-up.html">Ukrainian</a></li>
+				</ul><!--language-->
+			</footer>
+		</div><!--page-wrapper-->
+
+		<script src="../sources/common.js" defer></script>
+		<script src="../sources/sign-up.js" defer></script>
+	</body>
+</html>

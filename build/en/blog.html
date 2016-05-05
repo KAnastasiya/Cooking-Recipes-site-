@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Coocking Recipes</title>
+		<link rel="icon" type="image/png" href="../sources/images/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet">
+		<link href="../sources/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="page-wrapper">
+			<header class="page-header">
+				<a class="logo clearfix" href="index.html">
+					<object type="image/svg+xml" data="../sources/images/logo.svg">Site logo</object>
+					<p>Cooking <span>Recipes</span></p>
+				</a><!--logo-->
+				<nav class="clearfix"><ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="recipes.html">Recipes</a></li>
+					<li id="active-nav-item"><a href="blog.html">Blog</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li class="hidden" id="my-account"><img src="/avatar" alt="My ava">
+						<ul class="dropdown"> <li id="exit"><a href="#">Exit</a></li> </ul>
+					</li>
+				</ul></nav>
+				<div class="nav-dropdown"><div class="nav-icon"><a href="#"></a></div></div>
+			</header>
+			<main id="top">
+				<div class="floating-toolbar"><ul>
+					<li id="show-log-in"><a href="#">Log in</a></li>
+					<li id="show-sign-up"><a href="sign-up.html">Sign up</a></li>
+				</ul></div><!--floating-toolbar-->
+				<form id="log-in-form" action="#" method="post">
+					<div>
+						<input id="login" type="text" name="login" placeholder="Login (nick name)" value="text_user" autofocus autocomplete="off">
+						<p class="error_msg">&nbsp;</p>
+					</div>
+					<div>
+						<input id="pass" type="password" name="pass" placeholder="Пароль" value="123456789">
+						<input class="hidden" id="nacked_pass" type="text" name="nacked_pass" placeholder="Пароль">
+						<p class="error_msg">&nbsp;</p>
+					</div>
+					<div class="button-container clearfix">
+						<button id="log-in" type="submit">Log in</button>
+						<div class="show-pass checkbox-container clearfix">
+							<input id="show-pass" type="checkbox">
+							<label for="show-pass">Show password</label>
+						</div><!--show-pass-->
+					</div><!--button-container-->
+				</form><!--log-in-form-->
+				<div class="outerContainer blog-container">
+					<section class="blog">
+						<h1>Blog</h1>
+						<article>
+							<header>
+								<h3>Fusce euismod consequat ante orem ipsum dolor sre name</h3>
+								<p>Monday, 13.04.2013, 11:50 am</p>
+							</header>
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page4-img1.jpg" alt="image1">
+								<figcaption>
+									<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. Velit esse cillum dolore eu fugiat. Sit amet conse ctetur adipis.</p>
+									<div class="more-icon">
+										<a href="http://demopage.cms-guide.com/" target="_blank">Read more</a>
+									</div>
+								</figcaption>
+							</figure>
+						</article>
+						<article>
+							<header>
+								<h3>Fusce euismod consequat ante orem ipsum dolor sre name</h3>
+								<p>Monday, 13.04.2013, 11:50 am</p>
+							</header>
+							<figure>
+								<img src="http://templates.cms-guide.com/47370/images/page4-img2.jpg" alt="image2">
+								<figcaption>
+									<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. Velit esse cillum dolore eu fugiat. Sit amet conse ctetur adipis.</p>
+									<div class="more-icon">
+										<a href="http://templates.cms-guide.com/47370/read-more-1">Read more</a>
+									</div>
+								</figcaption>
+							</figure>
+						</article>
+					</section><!--blog-->
+					<aside class="blog-categories">
+						<article>
+							<h1>Categories</h1>
+							<ul>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Suspendisse sollicitudin velit sed leo</a></li>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Ut pharetra augue nec augue</a></li>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Nam elit agna,endrerit sit amet lroe porta</a></li>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Tincidunt ac, viverra sed, nulla</a></li>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Donec porta diam eu massa</a></li>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Quisque diam lorem interdum vitaedapib</a></li>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Scelerisque vitae, pede</a></li>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Donec eget tellus non erat seretse</a></li>
+								<li><a href="http://templates.cms-guide.com/47370/post-recipe" target="_blank">Lacinia fermentum doloerestur</a></li>
+							</ul>
+						</article>
+					</aside><!--blog-categories-->
+				</div><!--blog-container-->
+				<a class="scroll-up"></a>
+			</main>
+			<footer class="page-footer">
+				<p>Cooking Recipes ©2016</p>
+				<ul class="language">
+					<li id="current-lang"><a href="../en/blog.html">English</a></li>
+					<li><a href="../blog.html">Ukrainian</a></li>
+				</ul><!--language-->
+			</footer>
+		</div><!--page-wrapper-->
+
+		<script src="../sources/common.js" defer></script>
+	</body>
+</html>
