@@ -1,8 +1,8 @@
 node_modules/
+avatar_default.png
 .DS_Store
 Thumbs.db
 *.sublime*
 *.log
 *.psd
 *.ai
-avatar_default.png
