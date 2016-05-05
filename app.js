@@ -11,7 +11,7 @@ let fs = require('fs');
 let app = express();
 let LOGO_PATH = 'avatar.png';
 
-app.use(express.static('build'));
+app.use(express.static('./'));
 app.use(webpackMiddleware(webpack(webpackConfig), {
   publicPath: '/',
   hot: true,
